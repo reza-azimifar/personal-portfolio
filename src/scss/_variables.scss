@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: italic;
+    font-weight: 300;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: italic;
+    font-weight: 400;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: italic;
+    font-weight: 500;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Source-Sans-3";
+    font-style: italic;
+    font-weight: 700;
+    src: url(../fonts/Source-Sans-3/Source-Sans-3-BoldItalic.ttf) format('truetype');
+}
+
+$clr-primary-1: #2f3e46;
+$clr-primary-2: #354f52;
+$clr-primary-3: #52796f;
+$clr-primary-4: #84a98c;
+$clr-primary-5: #cad2c5;
+$clr-grey-1: #102a42;
+$clr-grey-2: #617d98;
+$clr-grey-3: rgb(241, 245, 248);
+$clr-white: #fff;
+$ff-primary: "Source-Sans-3", sans-serif;
+$transition: all 0.3s linear;
+$radius: 0.5rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1170px;
