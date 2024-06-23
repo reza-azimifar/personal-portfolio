@@ -1,0 +1,14 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "This is a personal portfolio website template",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss/styles.scss src/css/styles.css"
+  },
+  "author": "Reza Azimifar",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
