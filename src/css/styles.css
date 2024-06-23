@@ -109,9 +109,19 @@ p {
 .nav {
   display: grid;
   align-items: center;
-  background: #cad2c5;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  width: 100%;
+  color: #2f3e46;
   height: 4.5rem;
   padding: 1rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
 }
 .nav-center {
   width: 100%;
@@ -131,12 +141,21 @@ p {
   justify-self: end;
   background: transparent;
   border-color: transparent;
-  color: #354f52;
   font-size: 2rem;
   cursor: pointer;
 }
+.nav-center-header-btn i {
+  color: #2f3e46;
+}
 .nav-center-links {
   display: none;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {

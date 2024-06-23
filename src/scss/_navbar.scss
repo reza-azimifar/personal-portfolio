@@ -1,9 +1,19 @@
 .nav {
     display: grid;
     align-items: center;
-    background: $clr-primary-5;
+    background: $clr-glass;
+    backdrop-filter: blur(5px);
+    box-shadow: $light-shadow;
+    position: absolute;
+    width: 100%;
+    color: $clr-primary-1;
     height: 4.5rem;
     padding: 1rem;
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
 
     &-center {
         width: 100%;
@@ -24,9 +34,12 @@
                 justify-self: end;
                 background: transparent;
                 border-color: transparent;
-                color: $clr-primary-2;
                 font-size: 2rem;
                 cursor: pointer;
+
+                i {
+                    color: $clr-primary-1;
+                }
             }
         }
         
@@ -34,4 +47,11 @@
             display: none;
         }
     }
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: $dark-shadow;
 }
