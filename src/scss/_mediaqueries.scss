@@ -1,28 +1,59 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     h1 {
         font-size: 4rem;
     }
-
     h2 {
         font-size: 2.5rem;
     }
-
     h3 {
         font-size: 1.75rem;
     }
-
     h4 {
         font-size: 1rem;
     }
-
     body {
         font-size: 1rem;
     }
-    
     h1,
     h2,
     h3,
     h4 {
         line-height: 1;
+    }
+
+    .nav {
+        &-center {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+
+            &-header {
+                &-btn {
+                    display: none;
+                }
+            }
+
+            &-links {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                justify-self: start;
+                column-gap: 2rem;
+                margin-left: 2.5rem;
+                font-size: 1.2rem;
+
+                a {
+                    color: $clr-grey-1;
+                    transition: $transition;
+                    -webkit-transition: $transition;
+                    -moz-transition: $transition;
+                    -ms-transition: $transition;
+                    -o-transition: $transition;
+                }
+
+                a:hover {
+                    color: $clr-primary-3;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,37 @@
+.nav {
+    display: grid;
+    align-items: center;
+    background: $clr-primary-5;
+    height: 4.5rem;
+    padding: 1rem;
+
+    &-center {
+        width: 100%;
+        max-width: $max-width;
+        margin: 0 auto;
+
+        &-header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+
+            h3 {
+                font-size: 1.75rem;
+                margin-bottom: 0;
+            }
+
+            &-btn {
+                justify-self: end;
+                background: transparent;
+                border-color: transparent;
+                color: $clr-primary-2;
+                font-size: 2rem;
+                cursor: pointer;
+            }
+        }
+        
+        &-links {
+            display: none;
+        }
+    }
+}

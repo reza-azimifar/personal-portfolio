@@ -4,7 +4,7 @@
   "description": "This is a personal portfolio website template",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/scss/styles.scss src/css/styles.css"
+    "sass": "sass -w src/scss/styles.scss src/css/styles.css"
   },
   "author": "Reza Azimifar",
   "license": "MIT",
