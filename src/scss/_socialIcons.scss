@@ -1,0 +1,20 @@
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    column-gap: 2rem;
+    margin-top: 3rem;
+    a {
+        font-size: 1.5rem;
+        color: $clr-grey-1;
+
+        &:hover {
+            color: $clr-grey-2;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+        }
+    }
+}

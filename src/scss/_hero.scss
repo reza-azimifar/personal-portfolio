@@ -1,0 +1,30 @@
+.hero {
+    background: $clr-primary-5;
+
+    &-center {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+
+        &-info {
+            .underline{
+                margin-left: 0;
+                margin-bottom: 1rem;
+            }
+            h4 {
+                color: $clr-grey-2;
+                margin-top: 2rem;
+            }
+            &-btn {
+                margin-top: 1.25rem;
+            }
+            &-icons {
+                justify-items: start;
+            }
+        }
+        
+        &-img {
+            display: none;
+        }
+    }
+}

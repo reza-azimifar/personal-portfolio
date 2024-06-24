@@ -47,34 +47,15 @@
             display: inline-block;
             margin-bottom: 1.5rem;
             font-weight: bold;
-        }
-        a:hover {
-            color: $clr-primary-3;
-            transition: $transition;
-            -webkit-transition: $transition;
-            -moz-transition: $transition;
-            -ms-transition: $transition;
-            -o-transition: $transition;
-        }
-    }
 
-    &-icons {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        justify-items: center;
-        column-gap: 2rem;
-        margin-top: 3rem;
-        a {
-            font-size: 1.5rem;
-            color: $clr-grey-1;
-        }
-        a:hover {
-            color: $clr-grey-2;
-            transition: $transition;
-            -webkit-transition: $transition;
-            -moz-transition: $transition;
-            -ms-transition: $transition;
-            -o-transition: $transition;
+            &:hover {
+                color: $clr-primary-3;
+                transition: $transition;
+                -webkit-transition: $transition;
+                -moz-transition: $transition;
+                -ms-transition: $transition;
+                -o-transition: $transition;
+            }
         }
     }
 }
