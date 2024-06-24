@@ -37,6 +37,15 @@
                 font-size: 2rem;
                 cursor: pointer;
 
+                :hover {
+                    color: $clr-primary-3;
+                    transition: $transition;
+                    -webkit-transition: $transition;
+                    -moz-transition: $transition;
+                    -ms-transition: $transition;
+                    -o-transition: $transition;
+                }
+
                 i {
                     color: $clr-primary-1;
                 }

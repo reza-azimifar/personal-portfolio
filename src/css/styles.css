@@ -144,6 +144,14 @@ p {
   font-size: 2rem;
   cursor: pointer;
 }
+.nav-center-header-btn :hover {
+  color: #52796f;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
 .nav-center-header-btn i {
   color: #2f3e46;
 }
@@ -174,6 +182,61 @@ p {
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.sidebar-close-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  background: transparent;
+  border: transparent;
+  color: #2f3e46;
+  cursor: pointer;
+}
+.sidebar-close-btn :hover {
+  color: #52796f;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.sidebar-links {
+  text-align: center;
+}
+.sidebar-links a {
+  font-size: 1.5rem;
+  color: #2f3e46;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+.sidebar-links a:hover {
+  color: #52796f;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.sidebar-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+.sidebar-icons a {
+  font-size: 1.5rem;
+  color: #102a42;
+}
+.sidebar-icons a:hover {
+  color: #617d98;
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
