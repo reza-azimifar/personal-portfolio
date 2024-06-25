@@ -1,3 +1,13 @@
+@media screen and (min-width: 676px){
+    .services {
+        &-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 4rem;
@@ -128,6 +138,12 @@
             &-info {
                 align-self: center;
             }
+        }
+    }
+
+    .services {
+        &-center {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }

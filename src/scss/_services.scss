@@ -1,0 +1,38 @@
+.services {
+    &-center {
+
+        &-unit {
+            background: $clr-white;
+            padding: 3rem 1.5rem;
+            border-radius: $radius;
+            -webkit-border-radius: $radius;
+            -moz-border-radius: $radius;
+            -ms-border-radius: $radius;
+            -o-border-radius: $radius;
+            text-align: justify;
+            margin-bottom: 2rem;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+
+            h4 {
+                text-align: center;
+            }
+
+            .underline {
+                width: 3rem;
+                height: 0.12rem;
+            }
+
+            &:hover {
+                background: $clr-primary-2;
+                color: $clr-white;
+                .underline {
+                    background: $clr-white;
+                }
+            }
+        }
+    }
+}

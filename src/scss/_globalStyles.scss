@@ -58,12 +58,17 @@ p {
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 5rem 0;
 
     &-center {
         width: 90vw;
         margin: 0 auto;
         max-width: $max-width;
+    }
+
+    &-title {
+        margin-bottom: 4rem;
+        text-align: center;
     }
 }
 
@@ -101,4 +106,13 @@ p {
     margin-bottom: 1.25rem;
     margin-left: auto;
     margin-right: auto;
+    transition: $transition;
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+}
+
+.bg-gray {
+    background: $clr-grey-3;
 }
