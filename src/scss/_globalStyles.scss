@@ -57,10 +57,14 @@ p {
     color: var($clr-grey-2);
 }
 
-.section-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: $max-width;
+.section {
+    padding: 4rem 0;
+
+    &-center {
+        width: 90vw;
+        margin: 0 auto;
+        max-width: $max-width;
+    }
 }
 
 .btn {

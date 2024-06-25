@@ -14,6 +14,7 @@
     -moz-transition: $transition;
     -ms-transition: $transition;
     -o-transition: $transition;
+    z-index: 3;
 
     &-center {
         width: 100%;

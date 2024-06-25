@@ -1,0 +1,38 @@
+.about {
+    &-center {
+        display: grid;
+        place-items: center;
+        gap: 2rem;
+
+        &-img {
+            justify-self: center;
+
+            &-photo {
+                max-width: 25rem;
+                max-height: 30rem;
+                object-fit: cover;
+                border-radius: $radius;
+                -webkit-border-radius: $radius;
+                -moz-border-radius: $radius;
+                -ms-border-radius: $radius;
+                -o-border-radius: $radius;
+                position: relative;
+            }
+        }
+
+        &-info {
+
+            &-title {
+                margin-bottom: 2rem;
+
+                .underline{
+                    margin-left: 0;
+                }
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
