@@ -1,0 +1,32 @@
+.footer {
+    padding-bottom: 2rem;
+    background: #222;
+    display: grid;
+    place-items: center;
+
+    .social-icons {
+        margin-bottom: 2rem;
+
+        a {
+            color: $clr-primary-3;
+
+            &:hover {
+                color: $clr-primary-5;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: $clr-primary-3;
+
+        a {
+            color: $clr-primary-3;
+            text-decoration: underline;
+
+            &:hover {
+                color: $clr-primary-5;
+            }
+        }
+    }
+}

@@ -16,3 +16,6 @@ navBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     sidebar.classList.remove("show-sidebar");
 });
+
+const date = document.querySelector("#date");
+date.innerHTML = new Date().getFullYear();

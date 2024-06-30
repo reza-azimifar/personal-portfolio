@@ -753,6 +753,33 @@ p {
   -o-transform: rotateY(0);
 }
 
+.footer {
+  padding-bottom: 2rem;
+  background: #222;
+  display: grid;
+  place-items: center;
+}
+.footer .social-icons {
+  margin-bottom: 2rem;
+}
+.footer .social-icons a {
+  color: #52796f;
+}
+.footer .social-icons a:hover {
+  color: #cad2c5;
+}
+.footer p {
+  font-size: 1.1rem;
+  color: #52796f;
+}
+.footer p a {
+  color: #52796f;
+  text-decoration: underline;
+}
+.footer p a:hover {
+  color: #cad2c5;
+}
+
 @media screen and (min-width: 676px) {
   .services-center {
     display: grid;
