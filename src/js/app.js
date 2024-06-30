@@ -19,3 +19,10 @@ closeBtn.addEventListener("click", () => {
 
 const date = document.querySelector("#date");
 date.innerHTML = new Date().getFullYear();
+
+const sidebarLinks = document.querySelectorAll(".sidebar-link");
+sidebarLinks.forEach(Element => {
+    Element.addEventListener("click", () => {
+        sidebar.classList.remove("show-sidebar");
+    });
+});
