@@ -660,6 +660,99 @@ p {
   margin-bottom: 0;
 }
 
+.blog-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 3rem 1rem;
+}
+
+.card {
+  height: 27rem;
+  perspective: 3000px;
+  position: relative;
+}
+.card-front {
+  background: #fff;
+}
+.card-front img {
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.card-front-info {
+  padding: 1rem 1.5rem;
+}
+.card-front-info p {
+  text-align: justify;
+}
+.card-front-info-footer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+.card-front-info-footer img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.card-front-info-footer p {
+  margin-bottom: 0;
+  justify-self: end;
+  font-size: 0.85rem;
+  color: #354f52;
+}
+.card-back {
+  display: grid;
+  place-items: center;
+  background: #cad2c5;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+.card-side {
+  position: absolute;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  transition: all 0.7s linear;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -ms-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+  transform: rotateY(0);
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+}
+
 @media screen and (min-width: 676px) {
   .services-center {
     display: grid;

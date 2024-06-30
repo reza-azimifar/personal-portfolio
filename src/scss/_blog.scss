@@ -1,0 +1,107 @@
+.blog {
+    &-center {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 3rem 1rem;
+    }
+}
+
+.card {
+    height: 27rem;
+    perspective: 3000px;
+    position: relative;
+
+    &-front {
+        background: $clr-white;
+
+        img {
+            height: 13rem;
+            object-fit: cover;
+            border-radius: $radius;
+            -webkit-border-radius: $radius;
+            -moz-border-radius: $radius;
+            -ms-border-radius: $radius;
+            -o-border-radius: $radius;
+        }
+
+        &-info {
+            padding: 1rem 1.5rem;
+
+            p {
+                text-align: justify;
+            }
+
+            &-footer {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: center;
+
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    justify-self: end;
+                    font-size: 0.85rem;
+                    color: $clr-primary-2;
+                }
+            }
+        }
+    }
+
+    &-back {
+        display: grid;
+        place-items: center;
+        background: $clr-primary-5;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+
+    &-side {
+        position: absolute;
+        backface-visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        transition: all 0.7s linear;
+        -webkit-transition: all 0.7s linear;
+        -moz-transition: all 0.7s linear;
+        -ms-transition: all 0.7s linear;
+        -o-transition: all 0.7s linear;
+        border-radius: $radius;
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        -o-border-radius: $radius;
+    }
+
+    &:hover {
+        .card-front {
+            transform: rotateY(-180deg);
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+        }
+
+        .card-back {
+            transform: rotateY(0);
+            -webkit-transform: rotateY(0);
+            -moz-transform: rotateY(0);
+            -ms-transform: rotateY(0);
+            -o-transform: rotateY(0);
+        }
+    }
+}
